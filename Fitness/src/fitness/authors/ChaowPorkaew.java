@@ -13,6 +13,6 @@ package fitness.authors;
 public class ChaowPorkaew {
     
     String name = "Chaow Porkaew";
-    String stuid = "chaow.po";
+    String stuid = "520531124";
     
 }
