@@ -8,7 +8,7 @@ package fitness.authors;
 
 /**
  *
- * @author Administrator
+ * @author Chaow Porkaew
  */
 public class ChaowPorkaew {
     
