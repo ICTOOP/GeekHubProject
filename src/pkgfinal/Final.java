@@ -17,15 +17,14 @@ public class Final {
      */
     public static void main(String[] args) {
         // TODO code application logic here
- String[] a = {"10", "10.5", "abc"};
-
- int i = Integer.parseInt(a[0]);
-
- i++;
-
- System.out.println(i);
-
- 
+ try {
+ int i = 0;
+ System.out.println(10 / i);
+ }catch (Exception ex) {
+ System.out.println("CAT");
+ } finally {
+ System.out.println("FIN");
+ }
     }
     
 }
