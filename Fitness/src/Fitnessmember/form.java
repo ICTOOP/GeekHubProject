@@ -31,11 +31,11 @@ public class form extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        main = new Fitnessmember.Main();
         formmem = new formmem(this);
         bmi = new Fitnessmember.Bmi();
         calhour = new Fitnessmember.Calhour();
         aboutUs = new Fitnessmember.AboutUs();
-        main = new Fitnessmember.Main();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu4 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
@@ -48,11 +48,11 @@ public class form extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.CardLayout());
+        getContentPane().add(main, "E");
         getContentPane().add(formmem, "A");
         getContentPane().add(bmi, "B");
         getContentPane().add(calhour, "C");
         getContentPane().add(aboutUs, "D");
-        getContentPane().add(main, "E");
 
         jMenu4.setText("Main");
         jMenu4.addActionListener(new java.awt.event.ActionListener() {
