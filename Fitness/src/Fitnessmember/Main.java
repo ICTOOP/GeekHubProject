@@ -45,9 +45,9 @@ public class Main extends javax.swing.JPanel {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(127, 127, 127)
+                .addGap(142, 142, 142)
                 .addComponent(jLabel1)
-                .addContainerGap(159, Short.MAX_VALUE))
+                .addContainerGap(144, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
