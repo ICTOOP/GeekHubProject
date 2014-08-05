@@ -31,23 +31,38 @@ public class form extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        main = new Fitnessmember.Main();
         formmem = new formmem(this);
         bmi = new Fitnessmember.Bmi();
         calhour = new Fitnessmember.Calhour();
+        aboutUs = new Fitnessmember.AboutUs();
         jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu4 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu3 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new java.awt.CardLayout());
+        getContentPane().add(main, "E");
         getContentPane().add(formmem, "A");
         getContentPane().add(bmi, "B");
         getContentPane().add(calhour, "C");
+        getContentPane().add(aboutUs, "D");
 
-        jMenu1.setText("File");
+        jMenu4.setText("Main");
+        jMenu4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu4ActionPerformed(evt);
+            }
+        });
+        jMenuBar1.add(jMenu4);
+
+        jMenu1.setText("Member");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu1ActionPerformed(evt);
@@ -62,13 +77,17 @@ public class form extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuBar1.add(jMenu1);
+
+        jMenu3.setText("Calculate");
+
         jMenuItem2.setText("Bmi");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenu3.add(jMenuItem2);
 
         jMenuItem3.setText("Calculatehour");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
@@ -76,11 +95,20 @@ public class form extends javax.swing.JFrame {
                 jMenuItem3ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        jMenu3.add(jMenuItem3);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(jMenu3);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("About Us");
+
+        jMenuItem4.setText("ผู้จัดทำ");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem4);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -111,10 +139,22 @@ public class form extends javax.swing.JFrame {
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
-         Container container = this.getContentPane();
+         
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        Container container = this.getContentPane();
         CardLayout layout = (CardLayout) container.getLayout();
         layout.show(container, "D");
-    }//GEN-LAST:event_jMenu1ActionPerformed
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
+    private void jMenu4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu4ActionPerformed
+        // TODO add your handling code here:
+        Container container = this.getContentPane();
+        CardLayout layout = (CardLayout) container.getLayout();
+        layout.show(container, "E");
+    }//GEN-LAST:event_jMenu4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,14 +192,19 @@ public class form extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private Fitnessmember.AboutUs aboutUs;
     private Fitnessmember.Bmi bmi;
     private Fitnessmember.Calhour calhour;
     private Fitnessmember.formmem formmem;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private Fitnessmember.Main main;
     // End of variables declaration//GEN-END:variables
 }

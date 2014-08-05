@@ -47,7 +47,7 @@ public class Calhour extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel2.setText("จำนวนชั่วโมง");
 
-        cmdh.setText("คำนวณค่าชั่วโมง");
+        cmdh.setText("คำนวณค่าใช้จ่าย");
         cmdh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmdhActionPerformed(evt);
