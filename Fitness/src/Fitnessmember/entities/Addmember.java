@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package Fitnessmember;
+package Fitnessmember.entities;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
